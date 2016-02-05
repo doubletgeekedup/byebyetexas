@@ -2,7 +2,7 @@
 When(/^I ask to be notified when size (.*) width (.*) is in stock$/) do |size, width|
   within_window(windows.last) do
     fill_in("email", with: "shopper@shoes.com")
-    select '10'
+    select '12'
     select 'EE - Wide'
     click_button_with_text("NOTIFY ME!")
   end
