@@ -4,14 +4,14 @@ Feature: Ask for notifications
   I want to be able to ask for notifications
 
   Background:
-    Given I am on the Keen Utility Men's Boots page
-    And I have selected the Keen Utility Pittsburgh Boot from the search results
+    Given I am on the Inov-8 Men's Shoes page
+    And I have selected the Inov-8 F-Lite 240 Shoe from the search results
 
-  Scenario: Shopper is given opportunity to request notification when size is in stock
+  Scenario: Customer is given opportunity to request notification when size is in stock
     When I don't see my size
     Then the NOTIFY ME window should open
-
-  Scenario: Shopper requests notification when size and width become available
+#There's no place to select width. It is a constant
+  Scenario: Customer requests notification when size is available
     When I don't see my size
-    And I ask to be notified when size 10 width EE - Wide is in stock
-    Then I should see a notification message for size 10 width EE - Wide
+    And I ask to be notified when size 12  is in stock
+    Then I should see a notification message for size 12
