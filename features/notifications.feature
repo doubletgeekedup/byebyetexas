@@ -5,11 +5,12 @@ Feature: Ask for notifications
 
   Background:
     Given I am on the Inov-8 Men's Shoes page
-    And I have selected the Inov-8 F-Lite 240 Shoe from the search results
+    And I have selected the Inov-8 F-Lite 250 Shoe from the search results
 
   Scenario: Customer is given opportunity to request notification when size is in stock
     When I don't see my size
     Then the NOTIFY ME window should open
+    
 #There's no place to select width. It is a constant
   Scenario: Customer requests notification when size is available
     When I don't see my size
