@@ -19,7 +19,6 @@ When(/^I don't see my size$/) do
   click_link "Don't see your size?"
 end
 
-When(/^I select size (\d+) and width (.*)$/) do |size, width|
+When(/^I select size (\d+)) do |size|
   select (size)
-  select (width)
 end
