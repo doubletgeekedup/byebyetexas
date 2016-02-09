@@ -7,7 +7,7 @@ Feature: Sidebar navigation
     And I select Shoes from the Men's heading on the sidebar
     Then I should be on the Men's Shoes page
     
-     Scenario: Refine search by style via sidebar
+  Scenario: Refine search by style via sidebar
     Given I am on the zappos home page
     And I select Athletic from the Men's heading on the sidebar
     Then I should be on the Men's Athletic Shoes page
