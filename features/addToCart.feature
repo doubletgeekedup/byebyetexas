@@ -14,3 +14,4 @@ Feature: Add to cart
     When I select the Inov-8 F-Lite 250 Blue/Grey/Orange Shoe from the search results
     And I select size 12
     And add the item to my cart
+    Then there is one item in my cart
